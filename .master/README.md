@@ -44,6 +44,9 @@ Using the file at `test/fixtures/customers.json`, and utilizing your lodown libr
 
 ### Reading
 1. http://marcofranssen.nl/using-mocha-chai-sinon-to-test-node-js/
-2. http://www.vapidspace.com/coding/2014/10/29/code-coverage-metrics-with-mocha-and-istanbul/
-3. https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-setting-up-unit-testing-with-mocha-and-chai
-4. https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-unit-testing-with-mocha-and-chai
+2. http://stackoverflow.com/questions/19298118/what-is-the-role-of-describe-in-mocha
+3. http://www.vapidspace.com/coding/2014/10/29/code-coverage-metrics-with-mocha-and-istanbul/
+
+### Quick Videos
+1. https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-setting-up-unit-testing-with-mocha-and-chai
+2. https://egghead.io/lessons/javascript-how-to-write-a-javascript-library-unit-testing-with-mocha-and-chai
