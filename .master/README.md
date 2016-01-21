@@ -6,12 +6,17 @@ An npm functional programming library project
     
         npm init
 3. **IMPORTANT CONFIGURATION**: Fill in the prompts with your own details:
-    1. When asked for **test command**, enter: `istanbul cover _mocha -- test/ -R spec`
-    2. When asked for your **git repository**, provide **your forked GitHub repository's url**.
+    1. When asked for **test command**, enter:
+        
+        `istanbul cover _mocha -- test/ -R spec`
+
+    2. When asked for your **git repository**, you will probably be given the correct url as the default, so just select this by pressing `return`, otherwise, provide **your forked GitHub repository's url**.
 4. Install the required test libraries by running the following command:
     
         npm install i -D mocha chai sinon istanbul
-5. Write your tests in the file `test/index.spec.js`
+5. Write your tests in the file `test/index.spec.js`. Check out the [chai api for ](http://chaijs.com/api/bdd/) and [be careful when asserting/expecting against complex types](http://stackoverflow.com/questions/17526805/chai-test-array-equality-doesnt-work-as-expected) - you'll have to make use of the `.eql` api, and not `.equal`. For example:
+    
+        expect(lodown.filter([1, 2, 3], function(value) { return value > 2; } )).to.eql([3]);
 6. Implement your library in the file `index.js`. Remember that `index.js` is a Node.js module, so you must export your API using, for example:
     
         module.exports.each = each;
