@@ -9,3 +9,5 @@ notifications:
     - john@operationspark.org
     - max@operationspark.org
   slack: operationspark:ixq1B2YGNVjAZoh3PVEOoHic
+  
+script: ./.master/pr.sh
