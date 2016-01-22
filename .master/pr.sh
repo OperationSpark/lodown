@@ -1,5 +1,5 @@
 #!/bin/bash
 set -ev
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
-	npm test
+	cd .master && npm test
 fi
