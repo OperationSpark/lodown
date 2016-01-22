@@ -8,3 +8,4 @@ notifications:
   email:
     - john@operationspark.org
     - max@operationspark.org
+  slack: operationspark:ixq1B2YGNVjAZoh3PVEOoHic
