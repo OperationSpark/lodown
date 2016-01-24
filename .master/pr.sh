@@ -12,10 +12,10 @@ getConfig() {
         i=$(($i + 1))
     done < $1
 }
+getConfig ".master/c.txt" 
 
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     cd .master
-    getConfig "c.txt"
     echo "Running pull request tests for spec ${config[0]}..."
-	npm install && wget ${config[0]} -P test/ && npm test
+	npm install && wget config[0] -P test/ && npm test
 fi
