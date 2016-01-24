@@ -1,7 +1,7 @@
 var 
     expect = require('chai').expect,
     sinon = require('sinon'),
-    lodown = require('../../index'),
+    lodown = require('../index'),
     customers = require('./fixtures/customers.json');
 
 describe('lodown', function() {
@@ -43,4 +43,43 @@ describe('lodown', function() {
             expect(lodown.map({one: 'one', two: 'two', three: 'three'}, function(value) { return value.toUpperCase(); })).to.eql(['ONE', 'TWO', 'THREE']);
         });
     });
+    
+    describe("identity", function() {
+        it('identity should return the value passed to it, including types Number, String, Boolean, Array, Object, Function', function(){
+            expect(lodown.identity(1)).to.equal(1);
+            expect(lodown.identity('identity')).to.equal('identity');
+            expect(lodown.identity({a: "one"})).to.eql({a: "one"});
+            expect(lodown.identity([1,2,3])).to.eql([1,2,3]);
+            var fn = function() {  };
+            expect(lodown.identity(fn)).to.eql(fn);
+        });
+    });
 });
+
+
+// QUnit.test("_.typeof()", function(assert) {
+//   assert.strictEqual(_.typeOf("a"), "string", "Should handle strings.");
+//   assert.strictEqual(_.typeOf(10), "number", "Should handle numbers.");
+//   assert.strictEqual(_.typeOf([1,3]), "array", "Should handle arrays.");
+//   assert.strictEqual(_.typeOf({a: "one"}), "object", "Should handle objects.");
+//   assert.strictEqual(_.typeOf(false), "boolean", "Should handle booleans.");
+//   assert.strictEqual(_.typeOf(undefined), "undefined", "Should handle undefined.");
+//   assert.strictEqual(_.typeOf(null), "null", "Should handle null.");
+//   assert.strictEqual(_.typeOf(function(){}), "function", "Should handle functions.");
+// });
+
+// QUnit.test("_.first()", function(assert){
+//     assert.deepEqual(_.first(["a","b","c"]) ,"a", "Should return the first element.");
+//     assert.deepEqual(_.first(["a","b","c"], 2) ,["a","b"], "Should accept a length argument.");
+//     assert.deepEqual(_.first(["a","b","c"], -1) ,[], "Should return empty list if length is not a positive number.");
+//     assert.deepEqual(_.first(["a","b","c"], 5) ,["a","b","c"], "Should return the whole array if length is longer than the array's length.");
+//     assert.deepEqual(_.first({a:"b"}, 2), [], "Should return empty array if the array param is not an array.");
+// });
+
+// QUnit.test("_.last()", function(assert){
+//     assert.deepEqual(_.last(["a","b","c"]) ,"c", "Should return the last element.");
+//     assert.deepEqual(_.last(["a","b","c"], 2) ,["b","c"], "Should accept a length argument.");
+//     assert.deepEqual(_.last(["a","b","c"], -1) ,[], "Should return empty list if length is not a positive number.");
+//     assert.deepEqual(_.last(["a","b","c"], 5) ,["a","b","c"], "Should return the whole array if length is longer than the array's length.");
+//     assert.deepEqual(_.last({a:"b"}, 2), [], "Should return empty array if the array param is not an array.");
+// });
