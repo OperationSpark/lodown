@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ev
 
+echo "pull request is ${TRAVIS_PULL_REQUEST}."
+
 if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     cd .master
     readarray a < c.txt
