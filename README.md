@@ -9,7 +9,7 @@ An npm functional programming library project
 4. **IMPORTANT CONFIGURATION**: Fill in the prompts with your own details:
     0. When asked to name your lodown project, give it the name:
     
-        `lodown-<my-github-username>`
+        lodown-<my-github-username>
     
     Of course, replace `<my-github-username>` with your actual GitHub username. This will uniquely identify your library when it comes time to release it on `npm` - the last step in this project.
 
