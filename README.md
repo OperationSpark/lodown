@@ -8,15 +8,15 @@ An npm functional programming library project
         npm init
 4. **IMPORTANT CONFIGURATION**: Fill in the prompts with your own details:
     
-    0. When asked to name your lodown project, give it a unique name by appending your GitHub username to the name of the project (of course, replacing `<my-github-username>` with your actual GitHub username.), like so:
+    1. When asked to name your lodown project, give it a unique name by appending your GitHub username to the name of the project (of course, replacing `<my-github-username>` with your actual GitHub username.), like so:
     
         `lodown-<my-github-username>`
 
-    1. When asked for **test command**, enter:
+    2. When asked for **test command**, enter:
         
         `istanbul cover _mocha -- test/ -R spec`
 
-    2. When asked for your **git repository**, you will probably be given the correct url as the default, so just select this by pressing `return`, otherwise, provide **your forked GitHub repository's url**.
+    3. When asked for your **git repository**, you will probably be given the correct url as the default, so just select this by pressing `return`, otherwise, provide **your forked GitHub repository's url**.
     
 5. Install the required test libraries by running the following command:
     
