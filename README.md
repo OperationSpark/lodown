@@ -70,7 +70,7 @@ You'll then use your lodown library to solve problems in the next project.
 
 ## Optional: Unit tests
 
-If you want to learn about and create unit tests for your code, write your tests in the file `test/index.spec.js`. Check out the <a href="http://chaijs.com/api/bdd/" target="_blank">chai api for</a> and <a href="http://stackoverflow.com/questions/17526805/chai-test-array-equality-doesnt-work-as-expected" target="_blank">be careful when asserting/expecting against complex types</a> - you'll have to make use of the `.eql` api, and not `.equal`. For example:
+If you want to learn about and create unit tests for your code, write your tests in the file `test/index.spec.js`. Check out the <a href="http://chaijs.com/api/bdd/" target="_blank">chai api for examples on asserting expectations</a> and <a href="http://stackoverflow.com/questions/17526805/chai-test-array-equality-doesnt-work-as-expected" target="_blank">be careful when asserting/expecting against complex types</a> - you'll have to make use of the `.eql` api, and not `.equal`. For example:
     
         expect(lodown.filter([1, 2, 3], function(value) { return value > 2; } )).to.eql([3]);
 8. To run your tests, run the following command:
