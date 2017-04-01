@@ -1,9 +1,14 @@
 # lodown
 An npm functional programming library project
 
+In this project, you're going to create your own functional library of code and release this code for use through the `npm` (Node Package Management) platform.
+
+You'll then use your lodown library to solve problems in the next project.
+
+## Setup
 1. Fork this repository to your own GitHub account.
 2. Clone your forked version of the lodown repository to a new Cloud9 workspace or locally if you prefer.
-3. To create a `package.json` configuration file for our lodown library, from the command-line, run the command:
+3. We'll need a `package.json` file, which describes for `npm` our library project and lists any dependant libraries of code. To create a `package.json` configuration file for our lodown library, from the command-line, run the command:
     
         npm init
 4. **IMPORTANT CONFIGURATION**: Fill in the prompts with your own details:
@@ -18,7 +23,7 @@ An npm functional programming library project
 
     3. When asked for your **git repository**, you will probably be given the correct url as the default, so just select this by pressing `return`, otherwise, provide **your forked GitHub repository's url**.
     
-5. Install the required test libraries by running the following command:
+5. Once you're done creating your `package.json` file, go to the command line and install the required test libraries by running the following command:
     
         npm install i -D mocha chai sinon istanbul
 
