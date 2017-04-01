@@ -7,6 +7,7 @@ An npm functional programming library project
     
         npm init
 4. **IMPORTANT CONFIGURATION**: Fill in the prompts with your own details:
+    
     0. When asked to name your lodown project, give it the name:
     
         lodown-<my-github-username>
