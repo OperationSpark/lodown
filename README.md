@@ -7,7 +7,7 @@ You'll then use your lodown library to solve problems in the next project.
 
 ## Setup
 1. Fork this repository to your own GitHub account.
-2. Clone your forked version of the lodown repository to a new Cloud9 workspace or locally if you prefer.
+2. Clone your forked version of the lodown repository to a new Cloud9 workspace.
 3. We'll need a `package.json` file, which describes for `npm` our library project and lists any dependant libraries of code. To create a `package.json` configuration file for our lodown library, from the command-line, run the command:
     
         npm init
