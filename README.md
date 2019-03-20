@@ -64,9 +64,33 @@ You'll then use your lodown library to solve problems in the next project.
         }
         module.exports.each = each;
 
-8. Once you're done with all Functions and their docs, release your lodown library to `npm` (node package manager), following the steps in this video to do so (using your GitHub username to create a unique name for your library):
-    
-    <a href="https://docs.npmjs.com/getting-started/publishing-npm-packages" target="_blank">publishing-npm-packages</a>
+## Release your library!
+
+Once you're done with all Functions and their docs, release your lodown library to `npm` (node package manager), following the steps below to do so (using your GitHub username to create a unique name for your library):
+
+1) Create a new account in https://www.npmjs.com.
+2) Run this command from the terminal
+        
+        npm login
+        
+3) Enter your username and password. This will store the credentials so you don’t have to enter it for every publish.
+4) Now to publish, run
+
+        npm publish
+
+This will publish your package to NPM registry. Once publish completes(in less than a minute), you can go check your package in the link https://www.npmjs.com/~{username}/{package-name}.
+
+### Updating your library
+
+If you want to make changes to your package, you have to change the version number and publish again.
+
+The easiest way to do so is using the npm commands :
+
+    npm version patch
+    npm version minor 
+    npm version major 
+        
+to update the version automatically rather than manually updating them. These commands are based on <a href="https://docs.npmjs.com/about-semantic-versioning" target="_blank">semantic versioning</a>.
 
 ## Optional: Unit tests
 
