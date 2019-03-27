@@ -68,7 +68,7 @@ You'll then use your lodown library to solve problems in the next project.
 
 Once you're done with all Functions and their docs, release your lodown library to `npm` (node package manager), following the steps below to do so (using your GitHub username to create a unique name for your library):
 
-1) Create a new account in <a href = "https://www.npmjs.com" target="_blank"> npm's website </a>.
+1) Create a new account in <a href="https://www.npmjs.com" target="_blank">npm's website</a>.
 2) Run this command from the terminal
         
         npm login
