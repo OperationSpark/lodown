@@ -78,7 +78,7 @@ Once you're done with all Functions and their docs, release your lodown library 
 
         npm publish
 
-This will publish your package to NPM registry. Once publish completes(in less than a minute), you can go check your package in the link https://www.npmjs.com/~{username}/{package-name}.
+This will publish your package to NPM registry. Once publish completes(in less than a minute), you can search for your package on <a href="https://www.npmjs.com" target="_blank">npm's website</a>.
 
 ### Updating your library
 
